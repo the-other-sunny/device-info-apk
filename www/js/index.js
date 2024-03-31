@@ -44,4 +44,8 @@ function onDeviceReady() {
         p.innerText = `${info} = ${device[info]}`;
         appDiv.appendChild(p);
     }
+
+    const p = document.createElement("p");
+    p.innerText = `userAgent = ${navigator.userAgent}`;
+    appDiv.appendChild(p);
 }
