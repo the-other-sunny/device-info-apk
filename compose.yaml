@@ -1,0 +1,8 @@
+services:
+  build-app: 
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./bin:/project/bin
+    command: npm run build

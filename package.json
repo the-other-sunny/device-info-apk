@@ -2,10 +2,10 @@
   "name": "com.deviceinfo",
   "displayName": "DeviceInfo",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./scripts/build.sh",
+    "docker:build": "docker compose run --rm build-app"
   },
   "keywords": [
     "ecosystem:cordova"
