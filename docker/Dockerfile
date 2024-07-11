@@ -10,7 +10,7 @@ RUN pacman --noconfirm -S jdk11-openjdk jdk21-openjdk unzip gradle7 && \
 ENV ANDROID_HOME="/Android/Sdk"
 ENV JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
 
-RUN pacman --noconfirm -S npm && \
+RUN pacman --noconfirm -S npm git && \
     npm install -g cordova
 
 COPY . /project
